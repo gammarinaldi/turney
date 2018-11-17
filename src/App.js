@@ -8,6 +8,7 @@ import Carousel from './components/Carousel';
 import SideBar from './components/SideBar';
 import LatestEvents from './components/LatestEvents';
 import FeaturedEvents from './components/FeaturedEvents';
+import Footer from './components/Footer';
 
 class App extends Component {
   render() {
@@ -55,6 +56,13 @@ class App extends Component {
             <br/>
             <h3>Featured Events</h3>
             <FeaturedEvents />
+          </Col>
+        </Row>
+        <br/>
+        {/* FOOTER */}
+        <Row>
+          <Col>
+            <Footer />
           </Col>
         </Row>
 
