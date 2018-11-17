@@ -5,7 +5,7 @@ const Search = (props) => {
   return (
     <div>
       <InputGroup>
-        <Input placeholder="Search tournament, competition, contest"/>
+        <Input placeholder="Search tournament, competition, contest, people, team"/>
         <InputGroupAddon addonType="append">
           <Button color="success">Search</Button>
         </InputGroupAddon>
