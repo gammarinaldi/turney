@@ -62,6 +62,7 @@ class Footer extends Component {
             </Nav>
           </Collapse>
         </Navbar>
+        <br/>
       </div>
       );
     }
