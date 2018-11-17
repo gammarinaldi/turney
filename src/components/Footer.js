@@ -39,7 +39,7 @@ class Footer extends Component {
             Turney HQ
             <br/>Green Office Park 6, GF, BSD, Kab. Tangerang, Indonesia
             <br/>Tel: +62 081991090777
-            <br/>Mail: inqury@turney.id
+            <br/>Mail: inquiry@turney.id
         </div>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
