@@ -31,14 +31,15 @@ class Header extends Component {
       }
     render() {
       return (
-        <div>
-        <Navbar fixed color="light" light expand="md">
-          <NavbarBrand href="/">Turney</NavbarBrand>
+          <Navbar color="light" light expand="md" fixed="top" 
+          style={{ padding: '10px 50px 10px 50px' }}>
+          {/* <Navbar color="light" light expand="md"> */}
+          <NavbarBrand href="/"><b style={{ color:'green' }}>Turney</b></NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
                 <NavItem>
-                <NavLink href="#">Leaderboard</NavLink>
+                <NavLink href="#"><b>Leaderboard</b></NavLink>
                 </NavItem>
                 <NavItem>
                 <NavLink href="#">Wishlist</NavLink>
@@ -49,14 +50,21 @@ class Header extends Component {
                 <NavItem>
                 <NavLink href="#">Notif <Badge pill>2</Badge></NavLink>
                 </NavItem>
-                <NavItem>
-                <NavLink href="#">Help</NavLink>
-                </NavItem>
+                
               <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle nav caret>
                   My Account
                 </DropdownToggle>
                 <DropdownMenu right>
+                  <DropdownItem>
+                    My Events
+                  </DropdownItem>
+                  <DropdownItem>
+                    My Achievements
+                  </DropdownItem>
+                  <DropdownItem>
+                    My Team
+                  </DropdownItem>
                   <DropdownItem>
                     My Wallet
                   </DropdownItem>
@@ -69,6 +77,31 @@ class Header extends Component {
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
+
+              <UncontrolledDropdown nav inNavbar>
+                <DropdownToggle nav caret>
+                  Help
+                </DropdownToggle>
+                <DropdownMenu right>
+                  <DropdownItem>
+                    How it works
+                  </DropdownItem>
+                  <DropdownItem>
+                    How to create an event
+                  </DropdownItem>
+                  <DropdownItem>
+                    What does it cost to create an event
+                  </DropdownItem>
+                  <DropdownItem>
+                    How to contact the event organizer
+                  </DropdownItem>
+                  <DropdownItem divider />
+                  <DropdownItem>
+                    Help center
+                  </DropdownItem>
+                </DropdownMenu>
+              </UncontrolledDropdown>
+
                 &nbsp;&nbsp;&nbsp;
                 <NavItem>
                 <Button color="success">Create Event</Button>{' '}
@@ -76,7 +109,6 @@ class Header extends Component {
             </Nav>
           </Collapse>
         </Navbar>
-      </div>
       );
     }
 }
