@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './App.css';
 import { Container, Row, Col } from 'reactstrap';
 import Header from './components/Header';
-import Search from './components/Search';
 import Trending from './components/Trending';
 import Category from './components/Category';
 import Info from './components/Info';
@@ -16,13 +15,13 @@ class App extends Component {
     return (
       <Container>
 
-        <Row style={{ margin: '0px 0px 50px 0px' }}>
+        <Row style={{ margin: '0px 0px 80px 0px' }}>
           {/* HEADER */}
           <Col>
             <Header />
           </Col>
         </Row>
-        <br />
+        <br/>
 
         <Row>
           {/* INFO */}
@@ -34,12 +33,6 @@ class App extends Component {
         <Row>
           {/* CAROUSEL */}
           <Col><center><Carousel /></center></Col>
-        </Row>
-        <br/>
-
-        <Row>
-          {/* SEARCH */}
-          <Col><center><Search /></center></Col>
         </Row>
         <br/>
 
@@ -61,6 +54,7 @@ class App extends Component {
             <FeaturedEvents />
             <hr/>
             <h3>Latest Events</h3>
+            <hr/>
             <LatestEvents />
           </Col>
         </Row>
