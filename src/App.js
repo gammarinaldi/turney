@@ -3,9 +3,10 @@ import './App.css';
 import { Container, Row, Col } from 'reactstrap';
 import Header from './components/Header';
 import Search from './components/Search';
+import Trending from './components/Trending';
+import Category from './components/Category';
 import Info from './components/Info';
 import Carousel from './components/Carousel';
-import SideBar from './components/SideBar';
 import LatestEvents from './components/LatestEvents';
 import FeaturedEvents from './components/FeaturedEvents';
 import Footer from './components/Footer';
@@ -15,13 +16,14 @@ class App extends Component {
     return (
       <Container>
 
-        <Row>
+        <Row style={{ margin: '0px 0px 50px 0px' }}>
           {/* HEADER */}
           <Col>
             <Header />
           </Col>
         </Row>
         <br />
+
         <Row>
           {/* INFO */}
           <Col>
@@ -34,31 +36,36 @@ class App extends Component {
           <Col><center><Carousel /></center></Col>
         </Row>
         <br/>
+
         <Row>
           {/* SEARCH */}
           <Col><center><Search /></center></Col>
         </Row>
         <br/>
+
         <Row>
-          {/* SIDEBAR */}
-          <Col xs="3">
-            <SideBar />
-          </Col>
+          {/* TRENDING */}
+          <Col><center><Trending /></center></Col>
+        </Row>
 
-          <Col xs="1">
-            &nbsp;&nbsp;&nbsp;&nbsp;
-          </Col>
+        <Row>
+          {/* CATEGORY */}
+          <Col><center><Category /></center></Col>
+        </Row>
+        <hr/>
 
+        <Row>
           {/* CONTENT */}
-          <Col xs="8">
-            <h3>Latest Events</h3>
-            <LatestEvents />
-            <br/>
+          <Col>
             <h3>Featured Events</h3>
             <FeaturedEvents />
+            <hr/>
+            <h3>Latest Events</h3>
+            <LatestEvents />
           </Col>
         </Row>
         <br/>
+
         {/* FOOTER */}
         <Row>
           <Col>
