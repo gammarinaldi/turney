@@ -5,7 +5,7 @@ const Info = (props) => {
   return (
     <div>
       <Alert color="warning">
-        INFO: Turney app is in progress, please wait for the biggest change.
+        INFO: This homepage front-end is built with React JS, ReactStrap, Bootstrap 4.
       </Alert>
     </div>
   );
