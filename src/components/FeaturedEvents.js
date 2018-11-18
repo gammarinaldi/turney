@@ -4,6 +4,7 @@ import { Card, Button, CardImg, CardTitle, CardText, CardDeck,
 
 const FeaturedEvents = (props) => {
   return (
+    <div>
       <Row>
       <Col sm="4">
         <Card body>
@@ -11,7 +12,9 @@ const FeaturedEvents = (props) => {
           <CardTitle><a href="#">Maxx Coffee Barista Competition</a></CardTitle>
           <CardSubtitle style={{ color: '#666666' }}><img src ="images/calendar.png" alt="Calendar" /> SAT, NOV 17</CardSubtitle>
           <CardText style={{ color: '#898989' }}><img src ="images/location.png" alt="Location" /> JCC, Jakarta Selatan
-          <br/><span style={{ color: '#ea7f1c' }}>IDR 100,000</span><br/>#BaristaCompetition</CardText>
+          <br/><span style={{ color: '#ea7f1c' }}>IDR 100,000</span><br/>#BaristaCompetition<br/>
+          <center><img src ="images/bookmark.png" alt="Save to wishlist" /> <a href="#">Wishlist</a>&nbsp;&nbsp;&nbsp;&nbsp;
+          <img src ="images/share.png" alt="Share" /> <a href="#">Share</a></center></CardText>
           <Button color="success">Register</Button>
         </Card>
       </Col>
@@ -21,7 +24,9 @@ const FeaturedEvents = (props) => {
           <CardTitle><a href="#">Kicau Mania Competition</a></CardTitle>
           <CardSubtitle style={{ color: '#666666' }}><img src ="images/calendar.png" alt="Calendar" /> SAT, NOV 17</CardSubtitle>
           <CardText style={{ color: '#898989' }}><img src ="images/location.png" alt="Location" /> JCC, Jakarta Selatan
-          <br/><span style={{ color: '#ea7f1c' }}>IDR 100,000</span><br/>#KicauMania</CardText>
+          <br/><span style={{ color: '#ea7f1c' }}>IDR 100,000</span><br/>#KicauMania<br/>
+          <center><img src ="images/bookmark.png" alt="Save to wishlist" /> <a href="#">Wishlist</a>&nbsp;&nbsp;&nbsp;&nbsp;
+          <img src ="images/share.png" alt="Share" /> <a href="#">Share</a></center></CardText>
           <Button color="success">Register</Button>
         </Card>
       </Col>
@@ -31,12 +36,20 @@ const FeaturedEvents = (props) => {
           <CardTitle><a href="#">TarQ Dance Tournament</a></CardTitle>
           <CardSubtitle style={{ color: '#666666' }}><img src ="images/calendar.png" alt="Calendar" /> SAT, NOV 17</CardSubtitle>
           <CardText style={{ color: '#898989' }}><img src ="images/location.png" alt="Location" /> JCC, Jakarta Selatan
-          <br/><span style={{ color: '#ea7f1c' }}>IDR 100,000</span><br/>#DanceDance</CardText>
+          <br/><span style={{ color: '#ea7f1c' }}>IDR 100,000</span><br/>#DanceDance<br/>
+          <center><img src ="images/bookmark.png" alt="Save to wishlist" /> <a href="#">Wishlist</a>&nbsp;&nbsp;&nbsp;&nbsp;
+          <img src ="images/share.png" alt="Share" /> <a href="#">Share</a></center></CardText>
           <Button color="success">Register</Button>
         </Card>
       </Col>
-      
     </Row>
+    <Row>
+    <Col sm="12" md={{ size: 6, offset: 3 }}>
+    <br/>
+    <center><Button outline color="secondary">See more</Button>{' '}</center>
+    </Col>
+  </Row>
+  </div>
   );
 };
 

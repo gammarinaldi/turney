@@ -5,7 +5,7 @@ const Trending = (props) => {
   return (
     <div>
         <Alert color="">
-            <h5>Discover Category</h5>
+            <h5>Discover Categories</h5>
             <br/>
             <UncontrolledButtonDropdown style={{ margin: '0 20px 5px 10px' }}>
             <DropdownToggle caret outline color="primary">
