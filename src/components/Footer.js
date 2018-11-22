@@ -3,16 +3,13 @@ import {
     Collapse,
     Navbar,
     NavbarToggler,
-    NavbarBrand,
     Nav,
     NavItem,
     NavLink,
     UncontrolledDropdown,
     DropdownToggle,
     DropdownMenu,
-    DropdownItem,
-    Badge,
-    Button
+    DropdownItem
      } from 'reactstrap';
 
 class Footer extends Component {
@@ -40,6 +37,8 @@ class Footer extends Component {
             <br/>Green Office Park 6, GF, BSD, Kab. Tangerang, Indonesia
             <br/>Tel: +62 081991090777
             <br/>Mail: inquiry@turney.id
+            <br/>
+            <br/>v0.0.0.2
         </div>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
@@ -54,10 +53,7 @@ class Footer extends Component {
                 <NavLink href="#">Privacy Policy</NavLink>
                 </NavItem>
                 <NavItem>
-                <NavLink href="#">Term in Use</NavLink>
-                </NavItem>
-                <NavItem>
-                <NavLink href="#">Help</NavLink>
+                <NavLink href="#">Terms in Use</NavLink>
                 </NavItem>
             </Nav>
           </Collapse>
